@@ -25,11 +25,7 @@ body {
 .half-width {
   width: 50%;
 }
-/* .half-width h1 {
-  color: #ffffff;
-  font-size: 64px;
-  margin: 207px 50px 150px 156px;
-} */
+
 .copa-america {
   color: #ffffff;
   font-size: 45px;
@@ -75,10 +71,11 @@ button a {
   border-radius: 5px;
 }
 .players .player h1 {
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 0px 10px;
 }
 .player p {
   padding: 0 10px 10px 10px;
+
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -101,11 +98,11 @@ button a {
   /* flex-direction: row; */
   /* align-items: flex-start; */
   /* padding: 0px; */
-  width: 483.87px;
-  height: 213px;
+  /* width: 483.87px;
+  height: 213px; */
   /* align-items: center; */
 }
-.footer-logo {
+.footer-logo img {
   width: 483.87px;
   height: 110px;
   left: 0px;
@@ -113,11 +110,16 @@ button a {
 }
 .social-icon {
   /* width: 32px; */
-  height: 32px;
+  /* height: 32px; */
   /* right: 156.94px; */
   /* top: calc(50% - 32px/2 + 39.5px);  */
-  margin-left: 200px;
-  padding: 0 50px 0 50px;
+  /* margin-left: 200px; */
+  padding: 0 50px 0 100px;
+}
+.social-icon-active {
+  width: 65px;
+  height: 65px;
+  padding-left: 20px;
 }
 .copyright {
   font-size: 18px;
@@ -125,8 +127,8 @@ button a {
   /* width: 236px; */
   height: 32px;
   /* right: 156.94px; */
-  margin-top: 103px;
-  margin-left: 123px;
+  /* margin-top: 103px; */
+  /* margin-left: 0px; */
   /* margin-right: 123px; */
   /* justify-content: center; */
   font-size: 18px;
@@ -159,7 +161,7 @@ button a {
   }
   .half-width img {
     height: 259.17px;
-    width: 329px;
+    width: 400px;
     transition: transform 2s;
   }
 
@@ -169,11 +171,30 @@ button a {
   .players {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 400px;
+    /* grid-template-rows: 400px; */
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     align-items: center;
     margin: 10%;
     border-radius: 5px;
+  }
+  .player {
+    /* border: ; */
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  }
+  .footer-section {
+    display: flex;
+
+    justify-content: center;
+  }
+  .footer-logo {
+    width: 20px;
+    height: 63px;
+    left: 0px;
+    top: 0px;
+    padding-bottom: 20px;
   }
 }
