@@ -11,12 +11,13 @@ body {
   box-sizing: border-box;
 }
 
+/* MAIN PART  */
 /* Top Banner  */
 
 .top-banner {
   background-color: #2d25a0;
-  /* width: 1440px; */
-  width: 100%;
+  width: 1440px;
+
   height: 647px;
   display: flex;
   justify-content: center;
@@ -32,7 +33,6 @@ body {
   margin: 207px 50px 150px 156px;
 }
 button {
-  /* color: white; */
   background-color: #e02c6d;
   padding: 10.8px 23.34px;
 }
@@ -42,10 +42,9 @@ button a {
 }
 .half-width img {
   height: 556.01px;
-  width: 438px;
+  width: 600px;
   padding: 18px 84.01px 28px 84px;
   transition: transform 2s;
-  /* margin: 153px 140.99x 56px 50px; */
 }
 /* Applying Hover  */
 .half-width img:hover {
@@ -57,10 +56,8 @@ button a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 400px;
-  grid-column-gap: 20px;
-  /* grid-row-gap: 40px; */
-  /* height: 474px;
-  width: 330px; */
+  grid-column-gap: 10px;
+
   align-items: center;
   margin: 10%;
   border-radius: 5px;
@@ -73,7 +70,7 @@ button a {
 .players .player h1 {
   padding: 0 10px 0px 10px;
 }
-.player p {
+.player-details {
   padding: 0 10px 10px 10px;
 
   font-style: normal;
@@ -82,7 +79,6 @@ button a {
   line-height: 26px;
 }
 .player {
-  /* border: ; */
   width: 330px;
   height: 474px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -90,17 +86,8 @@ button a {
 /* Footer Section   */
 .footer-section {
   display: flex;
-  /* grid-template-columns: repeat(1, 1fr); */
-  /* justify-content: center;
-  align-items: center; */
+
   justify-content: center;
-  /* align-items: center; */
-  /* flex-direction: row; */
-  /* align-items: flex-start; */
-  /* padding: 0px; */
-  /* width: 483.87px;
-  height: 213px; */
-  /* align-items: center; */
 }
 .footer-logo img {
   width: 483.87px;
@@ -109,11 +96,6 @@ button a {
   top: 0px;
 }
 .social-icon {
-  /* width: 32px; */
-  /* height: 32px; */
-  /* right: 156.94px; */
-  /* top: calc(50% - 32px/2 + 39.5px);  */
-  /* margin-left: 200px; */
   padding: 0 50px 0 100px;
 }
 .social-icon-active {
@@ -124,21 +106,14 @@ button a {
 .copyright {
   font-size: 18px;
   line-height: 24px;
-  /* width: 236px; */
+
   height: 32px;
-  /* right: 156.94px; */
-  /* margin-top: 103px; */
-  /* margin-left: 0px; */
-  /* margin-right: 123px; */
-  /* justify-content: center; */
+
   font-size: 18px;
   line-height: 24px;
-  /* or 133% */
 
-  /* display: flex; */
   align-items: center;
   text-align: center;
-  /* top: calc(px50% - 32px / 2 + 39.5px); */
 }
 
 @media screen and (max-width: 500px) {
@@ -159,6 +134,7 @@ button a {
     line-height: 50px;
     margin: 112px 66px 154px 16px;
   }
+
   .half-width img {
     height: 259.17px;
     width: 400px;
@@ -179,7 +155,6 @@ button a {
     border-radius: 5px;
   }
   .player {
-    /* border: ; */
     width: 330px;
     height: 474px;
     padding: 15px;
@@ -187,14 +162,32 @@ button a {
   }
   .footer-section {
     display: flex;
-
     justify-content: center;
+    align-items: center;
   }
-  .footer-logo {
-    width: 20px;
-    height: 63px;
+
+  .footer-logo img {
+    width: 300.87px;
+    height: 110px;
     left: 0px;
     top: 0px;
-    padding-bottom: 20px;
+  }
+  .social-icon {
+    padding: 0 100px 0 60px;
+  }
+  .social-icon-active {
+    width: 45px;
+    height: 45px;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  .copyright {
+    font-size: 18px;
+    line-height: 24px;
+
+    height: 32px;
+
+    font-size: 18px;
+    line-height: 24px;
   }
 }
