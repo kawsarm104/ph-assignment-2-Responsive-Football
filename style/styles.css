@@ -1,59 +1,179 @@
 /* Fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
-
+/* Utilities  */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
+* {
+  box-sizing: border-box;
+}
 
 /* Top Banner  */
 
 .top-banner {
   background-color: #2d25a0;
+  /* width: 1440px; */
   width: 100%;
   height: 647px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .half-width {
   width: 50%;
 }
-.half-width h1 {
+/* .half-width h1 {
   color: #ffffff;
   font-size: 64px;
   margin: 207px 50px 150px 156px;
+} */
+.copa-america {
+  color: #ffffff;
+  font-size: 45px;
+  margin: 207px 50px 150px 156px;
+}
+button {
+  /* color: white; */
+  background-color: #e02c6d;
+  padding: 10.8px 23.34px;
+}
+button a {
+  color: white;
+  text-decoration: none;
 }
 .half-width img {
-  width: 100%;
-  padding-top: 90px;
-
-  /* margin: 200px 110x 0px 0px; */
+  height: 556.01px;
+  width: 438px;
+  padding: 18px 84.01px 28px 84px;
+  transition: transform 2s;
+  /* margin: 153px 140.99x 56px 50px; */
+}
+/* Applying Hover  */
+.half-width img:hover {
+  transform: rotate(360deg);
 }
 
 /* Players Section  */
 .players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: 400px; */
+  grid-template-rows: 400px;
   grid-column-gap: 20px;
+  /* grid-row-gap: 40px; */
+  /* height: 474px;
+  width: 330px; */
   align-items: center;
   margin: 10%;
   border-radius: 5px;
 }
 .players .player img {
-  width: 95%;
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
 }
 .players .player h1 {
-  padding:0 10px 10px 10px;
+  padding: 0 10px 10px 10px;
 }
-.players .player p {
-  padding:0 10px 10px 10px;
+.player p {
+  padding: 0 10px 10px 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
 }
 .player {
   /* border: ; */
+  width: 330px;
+  height: 474px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+/* Footer Section   */
+.footer-section {
+  display: flex;
+  /* grid-template-columns: repeat(1, 1fr); */
+  /* justify-content: center;
+  align-items: center; */
+  justify-content: center;
+  /* align-items: center; */
+  /* flex-direction: row; */
+  /* align-items: flex-start; */
+  /* padding: 0px; */
+  width: 483.87px;
+  height: 213px;
+  /* align-items: center; */
+}
+.footer-logo {
+  width: 483.87px;
+  height: 110px;
+  left: 0px;
+  top: 0px;
+}
+.social-icon {
+  /* width: 32px; */
+  height: 32px;
+  /* right: 156.94px; */
+  /* top: calc(50% - 32px/2 + 39.5px);  */
+  margin-left: 200px;
+  padding: 0 50px 0 50px;
+}
+.copyright {
+  font-size: 18px;
+  line-height: 24px;
+  /* width: 236px; */
+  height: 32px;
+  /* right: 156.94px; */
+  margin-top: 103px;
+  margin-left: 123px;
+  /* margin-right: 123px; */
+  /* justify-content: center; */
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  /* top: calc(px50% - 32px / 2 + 39.5px); */
+}
+
+@media screen and (max-width: 500px) {
+  .top-banner {
+    background-color: #2d25a0;
+    width: 360px;
+    height: 695px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+  }
+  .copa-america {
+    width: 278px;
+    height: 138px;
+    left: 16px;
+    top: 112px;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 112px 66px 154px 16px;
+  }
+  .half-width img {
+    height: 259.17px;
+    width: 329px;
+    transition: transform 2s;
+  }
+
+  .half-width img:hover {
+    transform: rotate(360deg);
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 400px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-items: center;
+    margin: 10%;
+    border-radius: 5px;
+  }
 }
