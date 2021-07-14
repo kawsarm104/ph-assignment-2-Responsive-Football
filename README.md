@@ -10,4 +10,4 @@ https://kawsarm104.github.io/ph-assignment-2-Responsive-Football/index.html
 
 # sample image
 
-![Alt Text](screenshot-kawsarm104.github.io-2021.07.14-21_42_15.png)
+![Alt Text](images/screenshot-kawsarm104.github.io-2021.07.14-21_42_15.png)
