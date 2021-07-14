@@ -83,30 +83,22 @@ button a {
   height: 474px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
-/* Top Player  */
 .top-player h1:first-child{
   text-align: center;
   color: cyan;
   font-size: 2em;
-  padding-top: 20px;
-  
 }
 .top-player > h1:hover{
  color: darkblue;
 }
-.top-player{
-  height: 630px;
-  /* background-color:bisque; */
-}
+
 /* Match Highlight */
 .match-highlight{
-  /* background-color: cadetblue; */
-  padding-top: 20px;
-  height: 630px;
-  /* margin: 10% 30% 10% 30%; */
+ 
+  height: 500px;
+  margin: 10% 30% 10% 30%;
   text-align: center;
   color: #2d25a0;
-
 }
 iframe{
 width: 600px;
@@ -196,19 +188,17 @@ height: 400px;
     font-size: 14px;
   } 
    /* Top 3 player  */
-  /* .top-player{
+  .top-player{
     background-color:bisque;
-    height: 500px;
-    margin-bottom: 100px;
-  } */
+  }
   /* Match Highlight */
-/* .match-highlight{
+.match-highlight{
  
   height: 500px;
-  /* margin: 10%; */
+  margin: 10%;
   text-align: center;
   color: #2d25a0;
-} */
+}
   iframe{
     width: 250px;
     height: 250px;
